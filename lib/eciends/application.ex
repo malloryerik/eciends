@@ -7,10 +7,11 @@ defmodule Eciends.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
-     Eciends.Repo
+      Eciends.Repo
       # Starts a worker by calling: Friends.Worker.start_link(arg)
       # {Friends.Worker, arg},
-]
+    ]
+
     opts = [strategy: :one_for_one, name: Eciends.Supervisor]
     Supervisor.start_link(children, opts)
   end
