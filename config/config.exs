@@ -1,9 +1,7 @@
 # This file is responsible for configuring your application
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
-# No username or password on this one
-# check the ecto docs to more see about this
-# https://hexdocs.pm/ecto/getting-started.html#adding-ecto-to-an-application
+
 config :eciends, Eciends.Repo,
   database: "eciends_repo",
   username: "postgres",
