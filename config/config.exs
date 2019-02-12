@@ -6,8 +6,8 @@ use Mix.Config
 # https://hexdocs.pm/ecto/getting-started.html#adding-ecto-to-an-application
 config :eciends, Eciends.Repo,
   database: "eciends_repo",
-  # username: "user",
-  # password: "pass",
+  username: "postgres",
+  password: "postgres",
   hostname: "localhost"
 
 # This configuration is loaded before any dependency and is restricted
